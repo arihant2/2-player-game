@@ -1,0 +1,228 @@
+body {
+	width: 100%;
+	overflow: hidden;
+	background-color: yellow;
+	background-size: cover;
+	height: 100vh;
+}
+
+#board {
+	position: relative;
+	width:  700px;
+	height: 500px;
+	margin:  125px auto;
+	background-color: rgb(24, 78, 125);
+	overflow: hidden;
+	border: 5px solid black;
+	border-radius: 4px;
+	/*background: url('b.jpg');*/
+	/*background-repeat: no-repeat;*/
+	filter: blur(2px);
+	/*filter: opacity(80%);*/
+}
+
+#jet1 {
+	bottom: 0px;
+  	background-color: green;
+}
+#jet2 {
+	top: 0px;
+  	background-color: brown;
+}
+#jet1, #jet2 {
+	position: absolute;
+	width: 30px;
+	height: 35px;
+	left: 45%;
+	border-radius: 10px;
+	border: 1px solid;
+	z-index: 99999999;
+	text-align: center;
+	/*justify-content: center;*/
+	/*color: white;*/
+	/*vertical-align: sub;*/
+}
+.bullets1 {
+	bottom: 40px;
+  	background-color: green;
+  	filter: drop-shadow(0 6mm 4mm rgb(0, 255, 64));
+}
+.bullets2 {
+	top: 40px;
+  	background-color: brown;
+  	filter: drop-shadow(0 -6mm 4mm pink);
+}
+.bullets1, .bullets2 {
+	position: absolute;
+	/*left: 100%;*/
+	width: 15px;
+	height: 15px;
+	border-radius: 100%;
+}
+
+/*#health1 {
+	top: 0px;
+	margin: 40px;
+}
+#health2 {
+	top: 200px;
+	margin: 40px;
+}
+#health1, #health2 {
+	position: absolute;
+	opacity: 0.7;
+	font-size: 10em;
+	color: black;
+}*/
+
+.snow {
+	position: absolute;
+	top: 0px;
+	width: 3px;
+	height: 3px;
+	border-radius: 100%;
+	background-color: whitesmoke;
+}
+
+
+/*#board1 {*/
+	/*position: relative;
+	width:  700px;*/
+	/*height: 500px;*/
+	/*margin:  125px auto;
+	border: 2px solid white;*/
+	/*background-color: rgb(24, 78, 125);*/
+	/*border-radius: 4px;
+	line-height: 500px;*/
+
+
+	/*position: absolute;*/
+	/*margin:  125px auto;*/
+	/*top: 0%;*/
+	/*left: 0%;*/
+	/*width: 690px;
+    height: 490px;
+	background-color: black;*/
+	/*overflow: hidden;*/
+	/*border: 5px solid black;
+	border-radius: 4px;
+	z-index: 999999999;
+	opacity: 0.5;
+}*/
+
+#start {
+	/*line-height: 500px;*/
+	position: absolute;
+	left: 47%;
+	top: 47%;
+	border: 1px solid;
+	border-radius: 6px;
+	/*padding: 0;*/
+	padding: 10px;
+	transform: scale(2);
+	z-index: 9999999999;
+	background-color: whitesmoke;
+	/*filter:none;*/
+	filter:opacity(90%);
+	/*line-height: 100vh;*/
+	/*box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;*/
+}
+#start:hover {
+	filter:opacity(95%);
+	/*transition: 0.3s;*/
+}
+#start:active {
+	filter:opacity(100%);
+}
+
+#over {
+	position: absolute;
+	left: 47%;
+	top: 47%;
+	/*border: 1px solid;*/
+	border-radius: 6px;
+	padding: 10px;
+	transform: scale(2);
+	z-index: 9999999999;
+	background-color: whitesmoke;
+	/*filter:opacity(85%);*/
+	display: none;
+	/*box-shadow: inset 0 0 2px #000000;*/
+	box-shadow: inset 0 0 2px 0px rgba(0,0,0,1);
+	filter:opacity(95%);
+}
+
+#msg {
+	position: absolute;
+	left: 46%;
+	top: 70%;
+	border: 1px solid;
+	border-radius: 6px;
+	padding: 10px;
+	/*transform: scale(2);*/
+	z-index: 9999999999;
+	background-color: whitesmoke;
+	/*filter:opacity(85%);*/
+	display: none;
+	/*box-shadow: inset 0 0 2px #000000;*/
+	/*box-shadow: inset 0 0 2px 0px rgba(0,0,0,1);*/
+	filter:opacity(95%);
+}
+
+/*.container-fluid {
+	top: 0px;
+
+}*/
+
+#info1 {
+	/*padding: 5px;*/
+	/*border: 2px solid;*/
+	/*position: absolute;
+	top: 150px;*/
+	left: 70px;
+}
+/*#info1 label {
+	height: 50px;
+	width: 50px;*/
+	/*background-color: black;*/
+	/*font-size: 20px;
+	opacity: 0.7;
+	color: black;
+	font-weight: bold;
+}*/
+/*#info1 #matches, #info1 #p1won, #info1 #p2won {
+	text-decoration: underline;
+}*/
+
+#info2 {
+	right: 80px;
+}
+/*#info2 label {
+	height: 50px;
+	width: 50px;
+	font-size: 20px;
+	opacity: 0.7;
+	color: black;
+	font-weight: bold;
+}*/
+/*#info2 #health1, #info2 #health2 {
+	text-decoration: underline;
+}
+*/
+
+#info1, #info2 {
+	padding: 5px;
+	position: absolute;
+	top: 150px;
+}
+#info1 label, #info2 label {
+	height: 50px;
+	width: 50px;
+	font-size: 20px;
+	opacity: 0.7;
+	color: black;
+	font-weight: bold;
+}
+#info1 #matches, #info1 #p1won, #info1 #p2won, #info2 #health1, #info2 #health2 {
+	text-decoration: underline;
+}

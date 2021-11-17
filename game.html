@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
+
+	<link rel="stylesheet" href="game.css" type="text/css"/>
+
+	<title>Shooting Game</title>
+</head>
+<body>
+	<div id="board">
+		<!-- <div class="rocks"></div> -->
+		<!-- <div class="bullets"></div> -->
+		<div id="jet1">P1</div>
+		<div id="jet2">P2</div>
+	<!-- <div id="board1"> -->
+	<!-- </div> -->
+	</div>
+	<label id="start" onclick="mouseClickStart()">START</label>
+	<label id="over">Round 1</label>
+	<!-- <div id="health1">2</div>
+	<div id="health2">2</div> -->
+	<!-- <div id="power1">100</div>
+	<div id="power2">100</div> -->
+	<!-- <div id="round">1</div> -->
+	<label id="msg">Press Any Key</label>
+
+    <div id="info1">
+    	<label>Matches: &nbsp;</label><label id="matches">0</label>
+    	<br><br>
+    	<label>Player1 - Won: &nbsp;</label><label id="p1won">0</label>
+    	<br><br>
+    	<label>Player2 - Won: &nbsp;</label><label id="p2won">0</label>
+    </div>
+	<div id="info2">
+    	<label>Player1 - Health: &nbsp;</label><label id="health1">100</label>
+    	<br><br>
+    	<label>Player2 - Health: &nbsp;</label><label id="health2">100</label>
+    </div>
+
+	<script src="game.js" type="text/javascript" defer></script>
+</body>
+</html>
+
